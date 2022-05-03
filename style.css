@@ -75,7 +75,7 @@ h1{ text-align: center;
     font-weight: bold;
     padding: 10px 20px;
     bottom: 100px;
-    right: 400px;
+    right: 440px;
     position:absolute;
     display:inline-block;
     border: none;
@@ -90,7 +90,17 @@ h1{ text-align: center;
     font-weight: bold;
     padding: 10px 20px;
     bottom: 100px;
-    right: 200px;
+    right: 00px;
+    position:absolute
+
+}
+
+#showMetheQuestion{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    bottom: 100px;
+    right: 210px;
     position:absolute
 
 }
@@ -113,3 +123,5 @@ h1{ text-align: center;
     color:white;
 
 }
+
+

@@ -38,20 +38,17 @@
             </div>
 
             <!--QUESTIONS-->
-            <div id="questionsContainer" class="hide">
-                Which Sample Appears in Bas' "Live For"
-            
-
-
+            <div id="questionsContainer" >
+               
             </div>
 
                 <!--answer choices that will be buttons-->
             <div class="answersContainer">
             <div class="answerButtons">
-                <button class="button">Answer1</button>
-                <button class="button">Answer2</button>
-                <button class="button">Answer3</button>
-                <button class="button">Answer4</button>
+                <button id="answerbutton"   class="button">Answer1</button>
+                <button id="answerbutton" class="button">Answer2</button>
+                <button id="answerbutton" class="button">Answer3</button>
+                <button id="answerbutton" class="button">Answer4</button>
             </div>
             
 
@@ -67,12 +64,14 @@
         <!--Start Button that plays the first music trivia question and starts
         player One's turn-->
        <button onclick="startGameAndTimer()"  id="startButton">Start</button>
+       <button  id="showMetheQuestion">Show Question</button>
        <button  id="nextButton">Next Question</button>
 
         </div>
 
 
-       <p class="score">Score<span class="scoreCount"></span></p>
+       <p class="score">Player 1 Score<span class="scoreCount"></span></p>
+       <p class="score">Player 2 Score<span class="scoreCount"></span></p>
        
 
 

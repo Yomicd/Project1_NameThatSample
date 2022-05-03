@@ -5,8 +5,19 @@
 
 // startButton.addEventListener("click",startGame)
 
+const questionsContainerElement = document.getElementById('questionsContainer')
+const answerButtonsElement = document.getElementById("answerbutton")
+const startButton = document.getElementById('timer') 
+const startButton_questions = document.getElementById('startButton')
 
-const startButton = document.getElementById('timer')
+
+let shuffledQuestions, currentQuestionIndex
+
+startButton_questions.addEventListener('click', startGameAndTimer)
+
+
+
+
 let timerInterval;
 
 startGameAndTimer = () => {
@@ -40,9 +51,14 @@ startGameAndTimer = () => {
         // if minute goes to 2 then we reset the minutes to 0
         if (minute == 3){
             minute = 0;
+            console.log("Next Player's Turn!")
         }
 
     }, 1000);
+
+
+
+    
     
 
 
@@ -50,41 +66,59 @@ startGameAndTimer = () => {
 
 
 
-    startButton.classList.add('hide')
-    questionContainerElement.classList.remove('hide')
-    goToNextQuestion()
-    startTimer()
+    // startButton.classList.add('hide')
+    // questionContainerElement.classList.remove('hide')
+    // goToNextQuestion()
+    // startTimer()
     
+/// player clicks to next question with next question button
 
-//Button controls will play music samples, they will change every time the next button is pressed?
-function playSample(){
-    myAudioObject.play()
+shuffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0
+    // questionsContainer.classlist.remove('hide')
+    startNextQuestion()
+
+
+function startNextQuestion(){
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+  
+}
+
+function showQuestion(question){
+    questionsContainerElement.innerText = question.question
+
 
 }
-/// can I make this easier by using an audio controls method?
+
+
+function answerQuestion(){
+ /// if answer is correct, score increases and meme populates behind gameboard
+    /// if answer is incorect no points are added     
+}
+  
 
 
 /// Questions should this be a class or an array?
-let questions = ["Which artist sampled Sly and the Family Stone's 'Everyday People?'",]
+const questions = [{
+    question: "Which Sample Appears in the Bas song 'Live For'",
+    answers: [
+        {text: 'Alex Isley', correct: true},
+        {text: 'Prince', correct: false},
+        {text: 'Beejee', correct: false},
+        {text: 'Beyonce', correct: false}
+    ]
+    
+}]
 ///(answer to questions on who sampled artist name and year)
-let answers = 
+
 
 function startTimer(){
 /// timer is 30 seconds as soon as music is played should thi be included in my start game function?
 
 }
 
-/// player clicks to next question with next question button
-function nextQuestion(){
-
-}
 
 
-function answerSelected(){
-    /// if answer is correct, score increases and meme populates behind gameboard
-    /// if answer is incorect no points are added
-
-}
 
 
 
