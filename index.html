@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Name that Sample</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!----Title and Logo of Music Notes on each end-->
+        <h1>Name That Sample</h1>
+        <div class="timerContainer">
+            <div onclick="startGame()" id="timer">00:00</div>
+
+        </div>
+
+        
+
+
+        <!---Div Container Game Board-->
+
+        <div class="boardContainer">
+                <!--possible timer-->
+        
+                <!-- <div class="timer"></div> -->
+
+            <!---music box for sound-->
+            <div class="musicBox">
+                 
+                <iframe width="200" height="100
+                " src="https://www.youtube.com/embed/uYWCPHdItRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+            </div>
+
+            <!--QUESTIONS-->
+            <div id="questionsContainer" class="hide">
+                Which Sample Appears in Bas' "Live For"
+            
+
+
+            </div>
+
+                <!--answer choices that will be buttons-->
+            <div class="answersContainer">
+            <div class="answerButtons">
+                <button class="button">Answer1</button>
+                <button class="button">Answer2</button>
+                <button class="button">Answer3</button>
+                <button class="button">Answer4</button>
+            </div>
+            
+
+        </div>
+
+        <!--Player One-->
+        
+
+        <!--Player One Cursor or Button to answer questions-->
+        
+
+        <div class="buttonBox">
+        <!--Start Button that plays the first music trivia question and starts
+        player One's turn-->
+       <button onclick="startGameAndTimer()"  id="startButton">Start</button>
+       <button  id="nextButton">Next Question</button>
+
+        </div>
+
+
+       <p class="score">Score<span class="scoreCount"></span></p>
+       
+
+
+        <!--Player Two-->
+       
+
+        <!--Player Two Cursor or Button to answer questions-->
+
+
+
+        
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
