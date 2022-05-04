@@ -4,23 +4,79 @@
 // const questionContainerElement = document.getElementById('questionsContainer')
 
 // startButton.addEventListener("click",startGame)
-
-const questionsContainerElement = document.getElementById('questionsContainer')
-const answerButtonsElement = document.getElementById("answerbutton")
 const startButton = document.getElementById('timer') 
 const startButton_questions = document.getElementById('startButton')
+const questionsContainerElement = document.getElementById('questionsContainer')
+const answers = document.querySelectorAll('#answersButton')
+// const answerButtonsElement = document.getElementById("answerbutton")
+const songvideos = document.querySelectorAll('.musicBox')
+const videoArray = ["https://www.youtube.com/watch?v=jQ-RrGCSa2M","https://www.youtube.com/watch?v=UmPgMc3R8zg", "https://www.youtube.com/watch?v=t7SvtikTkrM","https://www.youtube.com/watch?v=B95OUKk7alM","https://www.youtube.com/watch?v=oYpcCMxQXaE", "https://www.youtube.com/watch?v=5nj1HWC-dQs","https://www.youtube.com/watch?v=l3S1naGY9EQ"]
+const scores = document.querySelectorAll('.scores')
+const timer = document.querySelector('#timer')
+const video = document.createElement('video');
+video.src = videoArray
+// video.poster ='';
+video.autoplay = false;
+video.controls = true;
+video.muted = false;
+video.height = 100; // 
+video.width = 200; // 
+
+if (video.canPlayType('video/mp4')) {
+  console.log('set src to mp4 video');
+
+  video.src = 'my-video.mp4'
+} else if (video.canPlayType('video/ogg')) {
+  console.log('set src to ogg video');
+
+  video.src = 'my-video.ogg'
+} else {
+  console.log('provide link to user');
+}
+
+const box = document.getElementById('musicBox');
+
+box.appendChild(video);
 
 
-let shuffledQuestions, currentQuestionIndex
-
-startButton_questions.addEventListener('click', startGameAndTimer)
-
-
-
-
+let Player1 = 'Player 1'
+let Player2 = 'Player 2'
+let players = 0;
+let questionPrompt = [];
+let correctanswer;
+let player1score = 0;
+let player2score = 0;
 let timerInterval;
+// startButton_questions.addEventListener('click', startGameAndTimer)
 
-startGameAndTimer = () => {
+
+
+startGame.forEach(button => {
+    button.onclick = () => {
+        players = button.innerHTML.charAt(0)
+        setGame()
+
+    }
+})
+
+
+const setGame = () => {
+    if (players === '1'){
+        console.log("Player 1 turn")
+        
+    }
+}
+
+const askQuestions = () => {
+    function showQuestion(){
+        questionsContainerElement.innerText = questions.question
+    
+    
+    }
+//    for(let i = 0; i < videoArray.length, i++;)
+}
+
+ startGameAndTimer = () => {
     //Clear the time for the new round
     clearInterval(timerInterval);
     /// clear the m,s,h
@@ -62,7 +118,7 @@ startGameAndTimer = () => {
     
 
 
-    }
+    
 
 
 
@@ -73,22 +129,12 @@ startGameAndTimer = () => {
     
 /// player clicks to next question with next question button
 
-shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    // questionsContainer.classlist.remove('hide')
-    startNextQuestion()
-
 
 function startNextQuestion(){
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion()
   
 }
 
-function showQuestion(question){
-    questionsContainerElement.innerText = question.question
-
-
-}
 
 
 function answerQuestion(){
@@ -99,16 +145,81 @@ function answerQuestion(){
 
 
 /// Questions should this be a class or an array?
-const questions = [{
-    question: "Which Sample Appears in the Bas song 'Live For'",
-    answers: [
-        {text: 'Alex Isley', correct: true},
-        {text: 'Prince', correct: false},
-        {text: 'Beejee', correct: false},
-        {text: 'Beyonce', correct: false}
-    ]
+const questions = {
+                ///Round One
+        question: "Which song samples this J Dilla Produced Hit?",
+         song: ('https://www.youtube.com/watch?v=jQ-RrGCSa2M'),
+            answers: [
+            {text: 'A Tribe Called Quest - Can I Kick It', correct: false},
+            {text: 'Mya - Fallen', correct: true},
+            {text: 'Sade - Your Love is King', correct: false},
+            {text: 'N.E.R.D. - Love Bomb', correct: false},
+           
+        ],
+
+        question: "Which popular R&B Dance Pop Song Sampled this Stevie Knicks Song?",
+            song: ('https://www.youtube.com/watch?v=UmPgMc3R8zg'),
+
+        answers: [
+            {text: 'Britney Spears - Baby One More Time', correct: false},
+            {text: 'Jennifer Lopez - On the Floor', correct: false},
+            {text: 'Usher - DJ Got us Fallin in Love', correct: false},
+            {text: 'Destinys Child - Bootylicious', correct: true},
+        ],
+
+
+        question: "This Song Was Sampled by Which this 2007 Hit ",
+        song:('https://www.youtube.com/watch?v=t7SvtikTkrM'),
+        answers: [
+            {text: 'Timbaland - The Way I Are', correct:false},
+            {text: 'M.I.A. - Paper Planes', correct: true},
+            {text: 'Shop Boyz - Party Like a Rockstar', correct: false},
+            {text: 'Rihanna - Dont Stop the Music', correct: false},
+        ],
+                        ///Round 2
+
+
+        question: "Kanye West's 'Touch the Sky' sampled which classic song",
+        song:('https://www.youtube.com/watch?v=B95OUKk7alM'),
+        answers: [
+            {text: 'Stevie Wonder - Living For the City', correct: false},
+            {text: 'Skys the limit - Notorious B.I.G.', correct: false},
+            {text: 'Curtis Mayfield - Move On Up', correct: true},
+            {text: 'Sittin On the Dock of the Bay - Otis Redding', correct:false},
+        ],
+
+
+        question: "Which artist's song features this Stevie Wonder sample?",
+        song:('https://www.youtube.com/watch?v=oYpcCMxQXaE'),
+        answers: [
+            {text: 'Frank Ocean - Sweet Life', correct:true},
+            {text: 'Beyonce - Summertime', correct: false},
+            {text: 'Jay Z - Girls Girls Girls', correct: false},
+            {text: 'Outkast - Otis Redding', correct: false},
+        ],
+
+
+        question: "This song is sampled by which Hip Hop classic?",
+         song: ('https://www.youtube.com/watch?v=5nj1HWC-dQs'), 
+        answers: [
+            {text: 'Camp Lo - Luchini (This is it)', correct:false},
+            {text: 'Digable Planets - Rebirth of Slick (Cool like dat)', correct: false},
+            {text: 'The Fugees - Ready or Not', correct: false},
+            {text: 'A Tribe Called Quest - Electric Relaxation', correct: true},
+        ],
+
+        ///// Bonus?
+
+        question: "Name This Sample",
+        song: ('https://www.youtube.com/watch?v=l3S1naGY9EQ'),
+        answers: [
+            {text: "De La Soul - Stakes Is High", correct: true},
+            {text: "Mos Def - Mathematics", correct: false}
+        ]
+
+
     
-}]
+}
 ///(answer to questions on who sampled artist name and year)
 
 
