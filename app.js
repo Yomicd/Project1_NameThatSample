@@ -188,7 +188,7 @@ const winState =() => {
 
 
 //         question: "Which popular R&B Dance Pop Song Sampled this Stevie Knicks Song?",
-//             song: ('https://www.youtube.com/watch?v=UmPgMc3R8zg'),
+//             
 
 //         answers: [
 //             {text: 'Britney Spears - Baby One More Time', correct: false},
@@ -199,7 +199,7 @@ const winState =() => {
 
 
 //         question: "This Song Was Sampled by Which this 2007 Hit ",
-//         song:('https://www.youtube.com/watch?v=t7SvtikTkrM'),
+//         song:
 //         answers: [
 //             {text: 'Timbaland - The Way I Are', correct:false},
 //             {text: 'M.I.A. - Paper Planes', correct: true},
@@ -210,7 +210,7 @@ const winState =() => {
 
 
 //         question: "Kanye West's 'Touch the Sky' sampled which classic song",
-//         song:('https://www.youtube.com/watch?v=B95OUKk7alM'),
+//         song:
 //         answers: [
 //             {text: 'Stevie Wonder - Living For the City', correct: false},
 //             {text: 'Skys the limit - Notorious B.I.G.', correct: false},
@@ -220,7 +220,7 @@ const winState =() => {
 
 
 //         question: "Which artist's song features this Stevie Wonder sample?",
-//         song:('https://www.youtube.com/watch?v=oYpcCMxQXaE'),
+//         song:
 //         answers: [
 //             {text: 'Frank Ocean - Sweet Life', correct:true},
 //             {text: 'Beyonce - Summertime', correct: false},
