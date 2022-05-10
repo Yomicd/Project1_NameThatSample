@@ -49,25 +49,6 @@ h1{ font-size: 1rem;
 
 
 
-/* #flex-container {
-    display: flex;
-    width: 50%;
-    height: 250px;
-    align-items: center;
-    flex-direction: row;
-
-  }
-  #flex-container > div {
-    width: 100px;
-    margin: 15px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 35px;
-    align-items: center;
-    flex-direction: row;
-  } */
-
-
 
 audio{
     width: 50px;
