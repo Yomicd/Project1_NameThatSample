@@ -40,14 +40,13 @@ const answerQuestion7 = document.getElementById('.button')
 //     player1ScoreCount += 10;
 //     alert("button was clicked");
 // }
-//activate player turn on buttons, will insert score into specific score element
 
 
 
 
 
 
-// const addPoints = () => {
+
 
      let points = 0
 
@@ -83,7 +82,7 @@ const answerWasChosen = (e) => {
     const answerQuestion7 = document.getElementById('')
     if(e.target.classList.contains('answerbutton-true')){
     player1ScoreCount += 10 ;
-    // alert("hello");
+    
     }
 }
  const answers = document.getElementsByClassName('button')  
