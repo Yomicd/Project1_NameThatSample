@@ -24,7 +24,7 @@ let playerone = {
     rightanswers: [],
     wronganswers: [],
     round: 0,
-    isTurn: true
+    // isTurn: true
 
 }
 
