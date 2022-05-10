@@ -42,12 +42,6 @@ const answerQuestion7 = document.getElementById('.button')
 // }
 
 
-
-
-
-
-
-
      let points = 0
 
      function addPoints(){

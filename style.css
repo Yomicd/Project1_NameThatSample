@@ -1,19 +1,32 @@
 :root{
-    background-color: orange;
+    background-color: orangered;
+    background: rgba(239, 84, 45, 0.833);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 0px 4px 8px 0 white;
+
+
+   
+}
+
+@font-face {
+    font-family:ostrich-sans-bold ;
+    src: url('font/ostrich-sans-bold.ttf');
 }
 
 *{
-
-    margin: .5em;
-    padding: 3px;
+    box-sizing: border-box;
+    margin: 1.5em;;
+    padding: 0;
     font-size: 62.5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    font-family: 'Space Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    
 }
-
-
-
-
 
 body body {
     padding: 0;
@@ -22,17 +35,32 @@ body body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 52vh;
+    height: 100vh;
+    background-image: url("http://assets.stickpng.com/images/5856b3da4f6ae202fedf2794.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
     
 }
 
-
-
-h1{ font-size: 1rem;
-    color: white;
+p{
+    color: black;
+    font-size: 9px;
+    font-weight: 600px;
     
 }
 
+h1{ font-size: 50px;
+    color: black;
+    box-shadow: 0px 4px 8px 0 white;
+    padding: .2em;
+    width: 80%;
+    text-align: center;
+    font-family: ostrich-sans-bold;
+
+    
+}
 
 .gameBoard .gameboard2 .gameboard3{
     display: flex;
@@ -40,20 +68,17 @@ h1{ font-size: 1rem;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    
+
    
      
    
     
 }
 
-
-
-
-
 audio{
     width: 50px;
     height: 15px;
-  
 
 }
 
@@ -81,19 +106,22 @@ audio{
 
 .answerButtons{
     display:grid;
-    grid-template-rows: repreat(2, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 10px;
     margin: 3px 0;
+    
 }
 
 .answerbutton-true, .answerbutton-false{
-    background-color: purple;
+    background-color: olive;
     border: 1px solid;
     border-radius: 5px;
     padding: 1em;
     color: white;
     outline: none;
-    width:40%
+    width:43%;
+    
+    
     
 }
 
@@ -102,11 +130,12 @@ audio{
 }
 
 #startButton{
+    height: 30px;
     font-size: 1.5rem;
     font-weight: bold;
     align-items: center;
     display:inline-block;
-    margin: 2px;
+    margin: 3px;
     
     
 
@@ -120,28 +149,32 @@ audio{
 
 }
 
-
-
 .timerContainer{
     
     justify-content: center;
     align-items: center;
-    height: 4vh;
+    height: 5vh;
     border: black solid;
 }
-
 
 .p1scoreCount, .p2scoreCount {
     color: red;
     size: 25px;
+
 }
+
+.totalPointp1{
+    font-size: 10px;
+
+}
+
 
 .roundBox{
     border: solid black;
    font-size: 20px;
     width:15px;
-    height: 7px;
-    color:white;
+    height: 8px;
+    color: black;
     background-color: aquamarine;
     
 }
@@ -150,7 +183,7 @@ audio{
     margin-bottom: 2px;
     font-size: .8rem;
     font-weight: 200;
-    color:white;
+    color:black;
 
 }
 
