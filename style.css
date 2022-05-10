@@ -1,16 +1,22 @@
 :root{
     background-color: orangered;
     background: rgba(239, 84, 45, 0.833);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6.5px );
--webkit-backdrop-filter: blur( 6.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-border-radius: 44px; 
+    border-radius: 44px; 
+    background: #0f0f10;
+    -webkit-box-shadow: 30px 30px 52px #0d0d0e, -30px -30px 52px #111112;
+    box-shadow: 30px 30px 52px #0d0d0e, -30px -30px 52px #111112;
 box-shadow: 0px 4px 8px 0 white;
+background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/ddhbo8x-6ef4cc08-aab0-497e-af68-3665ecd0931e.png/v1/fill/w_865,h_865,strp/vinyl_record_on_a_transparent_background__by_prussiaart_ddhbo8x-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODY1IiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kZGhibzh4LTZlZjRjYzA4LWFhYjAtNDk3ZS1hZjY4LTM2NjVlY2QwOTMxZS5wbmciLCJ3aWR0aCI6Ijw9ODY1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.N09IN1GovLf67FdpH8ZnKZxqI6_AFp0uEx2spA-wn7Q");
+/* background-image: url("https://www.nicepng.com/png/detail/21-219244_blank-vinyl-record-png-vinyl-png-transparent.png"); */
+    background-repeat: no-repeat;
+    background-size:contain
 
 
    
 }
+
+
 
 @font-face {
     font-family:ostrich-sans-bold ;
@@ -45,14 +51,14 @@ body body {
 }
 
 p{
-    color: black;
+    color: white;
     font-size: 9px;
     font-weight: 600px;
     
 }
 
 h1{ font-size: 50px;
-    color: black;
+    color:#a46368;
     box-shadow: 0px 4px 8px 0 white;
     padding: .2em;
     width: 80%;
@@ -79,6 +85,7 @@ h1{ font-size: 50px;
 audio{
     width: 50px;
     height: 15px;
+    
 
 }
 
@@ -113,11 +120,11 @@ audio{
 }
 
 .answerbutton-true, .answerbutton-false{
-    background-color: olive;
+    background-color: #eed8b4;
     border: 1px solid;
     border-radius: 5px;
     padding: 1em;
-    color: white;
+    color: #a46368;
     outline: none;
     width:43%;
     
@@ -136,6 +143,17 @@ audio{
     align-items: center;
     display:inline-block;
     margin: 3px;
+
+}
+
+#startButton:hover{
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    display:inline-block;
+    margin: 3px;
+    background-color:#56241b ;
     
     
 
@@ -175,7 +193,7 @@ audio{
     width:15px;
     height: 8px;
     color: black;
-    background-color: aquamarine;
+    background-color: #d9ceb8;
     
 }
 
@@ -183,7 +201,7 @@ audio{
     margin-bottom: 2px;
     font-size: .8rem;
     font-weight: 200;
-    color:black;
+    color:white;
 
 }
 

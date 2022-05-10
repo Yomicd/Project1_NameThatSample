@@ -1,21 +1,17 @@
 /// Press Start button to start round one timer and load question 1,
 // const startButton = document.getElementById('timer')
 // const questionContainerElement = document.getElementById('questionsContainer')
-
-
-
-
-// startButton.addEventListener("click",startGame)
-const startButton = document.getElementById('timer') 
-const timer = document.querySelector('#timer')
-const player1turn = document.querySelector('#playBtn1');
 // const answerbuttonWrong = document.querySelector('#false');
 // const answerbuttonRight = document.querySelector('#true');
-
 // answerbuttonWrong.addEventListener('click', () => answerbuttonWrong.style.backgroundColor='red');
 // answerbuttonRight.addEventListener('click', () => answerbuttonRight.style.backgroundColor='green');
 // let player1ScoreCount = document.getElementById('.p1score-count')
 // let player2ScoreCount = document.getElementById('.p2score-count')
+
+
+const startButton = document.getElementById('timer') 
+const timer = document.querySelector('#timer')
+const player1turn = document.querySelector('#playBtn1');
 let timerInterval;
 
 let playerone = {
@@ -24,7 +20,6 @@ let playerone = {
     wronganswers: [],
     round: 0,
     // isTurn: true
-
 }
 
 // How to choose correct answer on button and add score to specific player
@@ -179,17 +174,7 @@ const winState =() => {
     }
     }   
  
-
-
-
-
-
-
-
 // /// log score of player one if they get it right or wrong
-
-
-
 // //prompt will pop up with final round one scores
 
 
