@@ -230,7 +230,7 @@ const winState =() => {
 
 
 //         question: "This song is sampled by which Hip Hop classic?",
-//          song: ('https://www.youtube.com/watch?v=5nj1HWC-dQs'), 
+//          song: 
 //         answers: [
 //             {text: 'Camp Lo - Luchini (This is it)', correct:false},
 //             {text: 'Digable Planets - Rebirth of Slick (Cool like dat)', correct: false},
@@ -241,7 +241,7 @@ const winState =() => {
 //         ///// Bonus?
 
 //         question: "Name This Sample",
-//         song: ('https://www.youtube.com/watch?v=l3S1naGY9EQ'),
+//         song: 
 //         answers: [
 //             {text: "De La Soul - Stakes Is High", correct: true},
 //             {text: "Mos Def - Mathematics", correct: false}
