@@ -238,14 +238,6 @@ const winState =() => {
 //             {text: 'A Tribe Called Quest - Electric Relaxation', correct: true},
 //         ],
 
-//         ///// Bonus?
-
-//         question: "Name This Sample",
-//         song: 
-//         answers: [
-//             {text: "De La Soul - Stakes Is High", correct: true},
-//             {text: "Mos Def - Mathematics", correct: false}
-//         ]
 
 
     
