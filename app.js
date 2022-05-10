@@ -187,56 +187,7 @@ const winState =() => {
  
 
 
-//         question: "Which popular R&B Dance Pop Song Sampled this Stevie Knicks Song?",
-//             
 
-//         answers: [
-//             {text: 'Britney Spears - Baby One More Time', correct: false},
-//             {text: 'Jennifer Lopez - On the Floor', correct: false},
-//             {text: 'Usher - DJ Got us Fallin in Love', correct: false},
-//             {text: 'Destinys Child - Bootylicious', correct: true},
-//         ],
-
-
-//         question: "This Song Was Sampled by Which this 2007 Hit ",
-//         song:
-//         answers: [
-//             {text: 'Timbaland - The Way I Are', correct:false},
-//             {text: 'M.I.A. - Paper Planes', correct: true},
-//             {text: 'Shop Boyz - Party Like a Rockstar', correct: false},
-//             {text: 'Rihanna - Dont Stop the Music', correct: false},
-//         ],
-//                         ///Round 2
-
-
-//         question: "Kanye West's 'Touch the Sky' sampled which classic song",
-//         song:
-//         answers: [
-//             {text: 'Stevie Wonder - Living For the City', correct: false},
-//             {text: 'Skys the limit - Notorious B.I.G.', correct: false},
-//             {text: 'Curtis Mayfield - Move On Up', correct: true},
-//             {text: 'Sittin On the Dock of the Bay - Otis Redding', correct:false},
-//         ],
-
-
-//         question: "Which artist's song features this Stevie Wonder sample?",
-//         song:
-//         answers: [
-//             {text: 'Frank Ocean - Sweet Life', correct:true},
-//             {text: 'Beyonce - Summertime', correct: false},
-//             {text: 'Jay Z - Girls Girls Girls', correct: false},
-//             {text: 'Outkast - Otis Redding', correct: false},
-//         ],
-
-
-//         question: "This song is sampled by which Hip Hop classic?",
-//          song: 
-//         answers: [
-//             {text: 'Camp Lo - Luchini (This is it)', correct:false},
-//             {text: 'Digable Planets - Rebirth of Slick (Cool like dat)', correct: false},
-//             {text: 'The Fugees - Ready or Not', correct: false},
-//             {text: 'A Tribe Called Quest - Electric Relaxation', correct: true},
-//         ],
 
 
 
