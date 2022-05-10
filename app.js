@@ -20,7 +20,7 @@ const player1turn = document.querySelector('#playBtn1');
 let timerInterval;
 
 let playerone = {
-    score: 0,
+    score: 10,
     rightanswers: [],
     wronganswers: [],
     round: 0,
