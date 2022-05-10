@@ -240,18 +240,6 @@ const winState =() => {
 
 
 
-    
-// }
-// ///(answer to questions on who sampled artist name and year)
-
-
-
-
-
-// /// if player wins a round then their name populates with confetti and meme background
-
-
-
 
 // /// log score of player one if they get it right or wrong
 
