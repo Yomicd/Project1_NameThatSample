@@ -1,5 +1,4 @@
 /// Press Start button to start round one timer and load question 1,
-/// Entire round is 2 minutes max for round 1 and 2 whic are 3 questions, final round is 5 questions 4 minutes
 // const startButton = document.getElementById('timer')
 // const questionContainerElement = document.getElementById('questionsContainer')
 
