@@ -102,7 +102,6 @@ const startGameAndTimer = () => {
         minute = 0;
         hour = 0;
 
-    // set interval every 1000 ms
     
     timerInterval = setInterval(function () {
         /// let timer represent two digits
