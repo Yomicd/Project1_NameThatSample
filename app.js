@@ -71,20 +71,20 @@ const answerQuestion7 = document.getElementById('.button')
          
 }
 
-const answerWasChosen = (e) => { 
-    // alert("button was clicked");
-    const answerQuestion1 = document.getElementById('')
-    const answerQuestion2 = document.getElementById('')
-    const answerQuestion3 = document.getElementById('')
-    const answerQuestion4 = document.getElementById('')
-    const answerQuestion5 = document.getElementById('')
-    const answerQuestion6 = document.getElementById('')
-    const answerQuestion7 = document.getElementById('')
-    if(e.target.classList.contains('answerbutton-true')){
-    player1ScoreCount += 10 ;
+// const answerWasChosen = (e) => { 
+//     // alert("button was clicked");
+//     const answerQuestion1 = document.getElementById('')
+//     const answerQuestion2 = document.getElementById('')
+//     const answerQuestion3 = document.getElementById('')
+//     const answerQuestion4 = document.getElementById('')
+//     const answerQuestion5 = document.getElementById('')
+//     const answerQuestion6 = document.getElementById('')
+//     const answerQuestion7 = document.getElementById('')
+//     if(e.target.classList.contains('answerbutton-true')){
+//     player1ScoreCount += 10 ;
     
-    }
-}
+//     }
+// }
  const answers = document.getElementsByClassName('button')  
 for (let i=0; i<answers.length; i++){
     
