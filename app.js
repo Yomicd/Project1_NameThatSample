@@ -9,15 +9,24 @@
 // startButton.addEventListener("click",startGame)
 const startButton = document.getElementById('timer') 
 const timer = document.querySelector('#timer')
-const player1turn = document.querySelector('#playBtn1')
-const answerbuttonWrong = document.querySelector("#false");
-const answerbuttonRight = document.querySelector('#true');
+const player1turn = document.querySelector('#playBtn1');
+// const answerbuttonWrong = document.querySelector('#false');
+// const answerbuttonRight = document.querySelector('#true');
 
-answerbuttonWrong.addEventListener('click', () => answerbuttonWrong.style.backgroundColor='red');
-answerbuttonRight.addEventListener('click', () => answerbuttonRight.style.backgroundColor='green');
+// answerbuttonWrong.addEventListener('click', () => answerbuttonWrong.style.backgroundColor='red');
+// answerbuttonRight.addEventListener('click', () => answerbuttonRight.style.backgroundColor='green');
 // let player1ScoreCount = document.getElementById('.p1score-count')
 // let player2ScoreCount = document.getElementById('.p2score-count')
 let timerInterval;
+
+let playerone = {
+    score: 0,
+    rightanswers: [],
+    wronganswers: [],
+    round: 0,
+    isTurn: true
+
+}
 
 // How to choose correct answer on button and add score to specific player
 const answerQuestion1 = document.getElementById('.button')
@@ -33,15 +42,6 @@ const answerQuestion7 = document.getElementById('.button')
 //     alert("button was clicked");
 // }
 //activate player turn on buttons, will insert score into specific score element
-
-let playerone = {
-    score: 0,
-    rightanswers: [],
-    wronganswers: [],
-    round: 0,
-    isTurn: true
-
-}
 
 
 
@@ -141,7 +141,7 @@ const startGameAndTimer = () => {
 
 
 
-const changeRound = (num) => {
+const changeRound = () => {
         let clock = document.querySelector('.roundBox')
         clock.append(playerone.round)
     
@@ -178,6 +178,16 @@ const setRounds = () =>{
         changeRound(3)
     }
 }
+
+const winState =() => {
+    if (playerone.score > 40){
+        alert("Congratulations!")
+        }
+    else if(playerone.score < 40){
+        alert("Sorry, Try again")
+    }
+    }
+
 
  /// if answer is correct, score increases and meme populates behind gameboard
     /// if answer is incorect no points are added     
