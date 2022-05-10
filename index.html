@@ -9,49 +9,163 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="newBody" >
 
         <!----Title and Logo of Music Notes on each end-->
-        <h1>Name That Sample</h1>
+        <h1>Name That Sample
         <div class="timerContainer">
-            <div onclick="startGame()" id="timer">00:00</div>
-
-        </div>
-
+            <button onclick="startGameAndTimer()"  id="startButton">Start</button>
+            <div id="timer">00:00</div>
+        
+         </div>
+        </h1>
         
 
 
         <!---Div Container Game Board-->
+                        <div class="gameBoard">
+            
+               <p id="question1">"Which song samples this J Dilla Produced Hit?"
+                        <audio controls loop> 
+                        <source src="mp3/1Running.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>   
+                <p>
 
-        <div class="boardContainer">
-                <!--possible timer-->
-        
-                <!-- <div class="timer"></div> -->
-
-            <!---music box for sound-->
-            <div id="musicBox">
-                 
+                </p>
+                                                 
+                                                 
+                    <button onclick="removePoints()"  class="answerbutton-false">'A Tribe Called Quest - Can I Kick It'</button> 
+                    <button id="true" onclick="addPoints()" class="answerbutton-true">'Mya - Fallen'</button> 
+                    <button onclick="removePoints()"  class="answerbutton-false">'Sade - Your Love is King'</button>
+                    <button id="false" onclick="removePoints()" class="answerbutton-false">'N.E.R.D. - Love Bomb'</button>
+                    
+                    
                 
-            </div>
+           
+       
+                   
+                <p id="question2" >"Which popular R&B Dance Pop Song Sampled this Stevie Knicks Song?"
+                    <audio controls loop> 
+                        <source src="mp3/2StevieKnicks.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
 
-            <!--QUESTIONS-->
-            <div id="questionsContainer" >
+                </p>
+            
+        
+                 
+                    <button onclick="removePoints()" class="answerbutton-false" >'Britney Spears - Baby One More Time'</button> 
+                    <button onclick="removePoints()" class="answerbutton-false">'Jennifer Lopez - On the Floor'</button>
+                    <button onclick="removePoints()" class="answerbutton-false">'Usher - DJ Got us Fallin in Love'</button>
+                    <button onclick="addPoints()" class="answerbutton-true" >'Destinys Child - Bootylicious'</button>
+                  
+
+
+                <p id="question3" >"This Song Was Sampled by Which this 2007 Hit"
+                    <audio controls loop> 
+                        <source src="mp3/3TheClash.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
+                </p>
+
+
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Timbaland - The Way I Are'</button>
+                     <button onclick="addPoints()" class="answerbutton-true"> 'M.I.A. - Paper Planes'</button>
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Shop Boyz - Party Like a Rockstar'</button>
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Rihanna - Dont Stop the Music'</button>
+      
+                      
+                                        </div>
+
+                                        <div class="gameboard2">
+
+                <p id="question4" >"Kanye West's 'Touch the Sky' sampled which classic song"
+                    <audio controls loop> 
+                        <source src="mp3/4Kanye.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
+                </p>
+                
+                    <button onclick="removePoints()" class="answerbutton-false"> 'Stevie Wonder - Living For the City'</button>
+                    <button onclick="removePoints()" class="answerbutton-false"> 'Skys the limit - Notorious B.I.G.'</button>
+                    <button onclick="addPoints()" class="answerbutton-true"> 'Curtis Mayfield - Move On Up'</button>
+                    <button onclick="removePoints()" class="answerbutton-false"> 'Sittin On the Dock of the Bay - Otis Redding'</button>
+       
+
+                <p id="question5" > "Which artist's song features this Stevie Wonder sample?"
+                    <audio controls loop> 
+                        <source src="mp3/5Stevie.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
+                </p>
+                
+      
+                     <button onclick="addPoints()" class="answerbutton-true"> 'Frank Ocean - Sweet Life'</button>
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Beyonce - Summertime'</button>
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Jay Z - Girls Girls Girls'</button>
+                     <button onclick="removePoints()" class="answerbutton-false"> 'Outkast - Otis Redding'</button>
+        
+
+
+                <p id="question6" > "This song is sampled by which Hip Hop classic?"
+                    <audio controls loop> 
+                        <source src="mp3/6MysticBrew.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
+                </p>                        
+                
+
+            <button onclick="removePoints()" class="answerbutton-false"> 'Camp Lo - Luchini (This is it)'</button>
+            <button onclick="removePoints()" class="answerbutton-false"> 'Digable Planets - Rebirth of Slick (Cool like dat)</button>
+            <button onclick="removePoints()" class="answerbutton-false"> 'The Fugees - Ready or Not', </button> 
+            <button onclick="addPoints()" class="answerbutton-true"> 'A Tribe Called Quest - Electric Relaxation'</button>
+                                        </div>
+
+
+                                        <div class="gameboard3">
+
+                <p id="questiony7" >"Name This Sample"
+                    <audio controls loop> 
+                        <source src="mp3/7AhmadJ.mp3" type="audio/mpeg">
+                        your browser does not support the HTML5 audio tag.
+                    </audio>
+                </p> 
+                
+        
+                    <button onclick="addPoints()" class="answerbutton-true"> 'De La Soul - Stakes Is High'</button>
+                    <button onclick="removePoints()" class="answerbutton-false"> 'Mos Def - Mathematics'</button>
+
+                                        </div>
+
+
+                  
+        
+
+
+    
+
+
+
                
-            </div>
+           
 
                 <!--answer choices that will be buttons-->
-            <div class="answersContainer">
-            <div class="answerButtons">
-                <button id="answerbutton"   class="button">Answer1</button>
-                <button id="answerbutton" class="button">Answer2</button>
-                <button id="answerbutton" class="button">Answer3</button>
-                <button id="answerbutton" class="button">Answer4</button>
-            </div>
+            <!-- <div class="answersContainer"> -->
+            
+                <!-- <button class="button">Answer1</button>
+                <button class="button">Answer2</button>
+                <button class="button">Answer3</button>
+                <button class="button">Answer4</button> -->
+            
             
 
-        </div>
+        
 
         <!--Player One-->
+
+        <!-- <button id="playBtn1">Player 1 Turn</button>
+        <button id="playBtn2">Player 2 Turn</button> -->
         
 
         <!--Player One Cursor or Button to answer questions-->
@@ -60,15 +174,19 @@
         <div class="buttonBox">
         <!--Start Button that plays the first music trivia question and starts
         player One's turn-->
-       <button onclick="startGameAndTimer()"  id="startButton">Start</button>
-       <button  id="showMetheQuestion">Show Question</button>
-       <button  id="nextButton">Next Question</button>
+       <!-- <button onclick="startGameAndTimer()"  id="startButton">Start</button>
+       <button  id="nextButton">Next Question</button> -->
 
         </div>
 
 
-       <p class="score">Player 1 Score<span class="scoreCount"></span></p>
-       <p class="score">Player 2 Score<span class="scoreCount"></span></p>
+       <p class="p1score-count">Player 1 Score:<span class="totalPointp1" >0</span></p>
+       <!-- <p class="p2score-count">Player 2 Score:<span class="totalPointp2" >0</span></p> -->
+       <div class="roundBox"></div>
+
+
+
+    </div>
        
 
 
