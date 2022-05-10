@@ -187,19 +187,6 @@ const winState =() => {
  
 
 
-/// Questions should this be a class or an array?
-// const questions = {
-//                 ///Round One
-//         question: "Which song samples this J Dilla Produced Hit?",
-//          song: ('https://www.youtube.com/watch?v=jQ-RrGCSa2M'),
-//             answers: [
-//             {text: 'A Tribe Called Quest - Can I Kick It', correct: false},
-//             {text: 'Mya - Fallen', correct: true},
-//             {text: 'Sade - Your Love is King', correct: false},
-//             {text: 'N.E.R.D. - Love Bomb', correct: false},
-           
-//         ],
-
 //         question: "Which popular R&B Dance Pop Song Sampled this Stevie Knicks Song?",
 //             song: ('https://www.youtube.com/watch?v=UmPgMc3R8zg'),
 
