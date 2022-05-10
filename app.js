@@ -183,11 +183,7 @@ const winState =() => {
     else if(playerone.score < 40){
         alert("Sorry, Try again")
     }
-    }
-
-
- /// if answer is correct, score increases and meme populates behind gameboard
-    /// if answer is incorect no points are added     
+    }   
  
 
 
