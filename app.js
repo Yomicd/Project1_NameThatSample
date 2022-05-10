@@ -245,13 +245,6 @@ const winState =() => {
 // ///(answer to questions on who sampled artist name and year)
 
 
-// // function startTimer(){
-// // /// timer is 30 seconds as soon as music is played should thi be included in my start game function?
-
-// // }
-
-
-
 
 
 
